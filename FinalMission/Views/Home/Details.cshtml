@@ -1,0 +1,62 @@
+﻿@model Entertainer
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="fw-bold">Entertainer ID</div>
+            <div>@Model.EntertainerId</div>
+        </div>
+        <div class="col">
+            <div class="fw-bold">Stage Name</div>
+            <div>@Model.EntStageName</div>
+        </div>
+        <div class="col">
+            <div class="fw-bold">SSN</div>
+            <div>@Model.EntSsn</div>
+        </div>
+        <div class="col">
+            <div class="fw-bold">Street Address</div>
+            <div>@Model.EntStreetAddress</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="fw-bold">City</div>
+            <div>@Model.EntCity</div>
+        </div>
+        <div class="col">
+            <div class="fw-bold">State</div>
+            <div>@Model.EntState</div>
+        </div>
+        <div class="col">
+            <div class="fw-bold">Zip Code</div>
+            <div>@Model.EntZipCode</div>
+        </div>
+        <div class="col">
+            <div class="fw-bold">Phone Number</div>
+            <div>@Model.EntPhoneNumber</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="fw-bold">Web Page</div>
+            <div>@Model.EntWebPage</div>
+        </div>
+        <div class="col">
+            <div class="fw-bold">Email Address</div>
+            <div>@Model.EntEmailAddress</div>
+        </div>
+        <div class="col">
+            <div class="fw-bold">Date Entered</div>
+            <div>@Model.DateEntered</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <a class="btn btn-info" asp-controller="Home" asp-action="EditEnt" asp-route-id="@Model.EntertainerId">Edit</a>
+        </div>
+        <div class="col">
+            <a class="btn btn-danger" asp-controller="Home" asp-action="DeleteEnt" asp-route-id="@Model.EntertainerId">Delete</a>
+        </div>
+    </div>
+</div>
